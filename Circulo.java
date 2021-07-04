@@ -44,7 +44,7 @@
     void imprime() {
         System.out.println("area = " + area);
 
-        System.out.println("raio = " + raio); // imprimindo os atributos
+        System.out.println("raio = " + raio);
         System.out.println("area = " + area);
         System.out.println("circunf = " + circunf);
     }
