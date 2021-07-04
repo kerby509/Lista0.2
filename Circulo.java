@@ -1,6 +1,6 @@
   public  class Circulo {
-    //private int raio;
-    int raio;
+    private int raio;
+    Circulo (int raio) {};
     double area ;
     double circunf ;
     
@@ -18,8 +18,14 @@
     }
 
     public void setRaio(int raio) {
+        if (raio < 22) {
+            System.out.println("Alteracao nao realizada porque o raio deve ser maior!");
+            return;
+        }
 
         this.raio = raio;
+
+        //this.raio = raio;
     }
 
     public double getArea() {
