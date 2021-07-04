@@ -1,6 +1,6 @@
   public  class Circulo {
-    private int raio;
-    Circulo (int raio){};
+    //private int raio;
+    int raio;
     double area ;
     double circunf ;
     
@@ -9,9 +9,11 @@
         setRaio(raio);
         setArea(area);
         setCircunf(circunf);
-        
+    
+
+
     }
-    public int getRaio() {
+    public  int getRaio() {
         return this.raio;
     }
 
@@ -40,12 +42,5 @@
 
 
 
-
-    void imprime() {
-        System.out.println("area = " + area);
-
-        System.out.println("raio = " + raio);
-        System.out.println("area = " + area);
-        System.out.println("circunf = " + circunf);
-    }
+        
 }
