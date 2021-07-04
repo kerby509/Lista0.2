@@ -1,10 +1,13 @@
 public class Main {
     public static void main(String[] args){
-        Circulo c1,c2;
-        double raio=7;
-        c1 = new Circulo();
-        c1.area=4;
-        c1.circunf=10;
+        
+        Circulo c1 = new Circulo( 22,7.00,8.00);
+        
+        //System.out.println("raio = " + c1.raio);
+
+        System.out.println("raio = " + c1.area);
+        System.out.println("area = " + c1.area);
+        System.out.println("circunf = " + c1.circunf);
 
 
     }
