@@ -8,15 +8,15 @@ public class Boid extends Entidade {
         return this.energia;
     }
 
-    public void setEnergia(int energia){
-        this.energia = energia;
+    public void setEnergia(int e){
+        this.energia = e;
     }
 
     public Forca getVelocidade(){
         return this.velocidade;
     }
 
-    public void setVelocidade( Forca v){
-        this.velocidade = v;
+    public void setVelocidade( Forca f){
+        this.velocidade = f;
     }
 }
