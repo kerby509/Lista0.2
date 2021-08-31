@@ -1,6 +1,6 @@
 package Lista1;
 
-public class Services extends Entidade {
+public class Services  {
     public static int contaPossiveisCandidatos(Inimigo i[]){
         int cont = 0;
 
@@ -15,5 +15,6 @@ public class Services extends Entidade {
 
         }
         return cont;   
+    
     }
 }
