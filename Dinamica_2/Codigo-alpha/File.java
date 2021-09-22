@@ -10,5 +10,20 @@ public class File {
             return true;
         }
     }
+
+    public File() {
+        this("?", "?", new String[1]);
+        setLinha(0, "?");
+    }
+
+    public File(String nome, String caminho) {
+        this(nome, caminho, new String[1]);
+    }
+
+    public File(String nome, String caminho, String[] linhas) {
+        this.nome = nome;
+        this.caminho = caminho;
+        this.linhas = linhas;
+    }
     
 }
