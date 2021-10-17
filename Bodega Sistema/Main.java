@@ -36,6 +36,26 @@ public class Main {
              
              opt = entrada.nextInt();
 
+             if(opt==1){
+               
+                System.out.println("Digite o código da bebida: ");
+                int codigoBeb = entrada.nextInt();
+                System.out.println("Digite o nome da bebida: ");
+                String nomeBeb = entrada.next();
+                System.out.println("Digite o Teor Alc: ");
+                float teorAlc =  entrada.nextFloat();
+                System.out.println("Digite a quantidade em (ml): ");
+                float qutml =entrada.nextFloat();
+                System.out.println("Digite o preco de venda: ");
+                float precoDeVenda = entrada.nextFloat();
+                System.out.println("Digite a quantidade em estoque");
+                int qutDispoEmEstoque = entrada.nextInt();
+                
+                Bebida beb = new Bebida (codigoBeb,nomeBeb,teorAlc,qutml,precoDeVenda,qutDispoEmEstoque);
+                    bebidas.add(beb);
+                    bebida+=1;
+             }
+
 
 
         }while(opt!=7);
