@@ -16,14 +16,23 @@ abstract class Bebida {
         this.precoDeVenda=e;
         this.qutDispoEmEstoque=f;
         
-  }
-
-  void ComprarBebida(int qutComp){
-    if(qutComp>0){
-        this.qutDispoEmEstoque+=qutComp;
     }
 
-}
+    void ComprarBebida(int qutComp){
+        if(qutComp>0){
+            this.qutDispoEmEstoque+=qutComp;
+        }
+
+    }
+    void VenderBebida(int venda){
+         if(this.qutDispoEmEstoque>=venda){
+             this.qutDispoEmEstoque-=venda;
+         System.out.println("Venda realizada com sucesso");
+        }else{
+            System.out.println("Estoque insuficiente");
+        }
+
+    }
     
 
 
