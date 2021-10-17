@@ -17,6 +17,13 @@ abstract class Bebida {
         this.qutDispoEmEstoque=f;
         
   }
+
+  void ComprarBebida(int qutComp){
+    if(qutComp>0){
+        this.qutDispoEmEstoque+=qutComp;
+    }
+
+}
     
 
 
