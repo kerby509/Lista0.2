@@ -54,7 +54,23 @@ public class Main {
                 Bebida beb = new Bebida (codigoBeb,nomeBeb,teorAlc,qutml,precoDeVenda,qutDispoEmEstoque);
                     bebidas.add(beb);
                     bebida+=1;
+             
+            }else if(opt==2){
+                if(bebida>0){
+                
+             
+             for(int i=0;i<bebidas.size();i++){
+                 Bebida boisson = bebidas.get(i);
+                    System.out.println("o código da bebida: "+boisson.codigoBeb );
+                    System.out.println("O nome da Bebida: "+boisson.nomeBeb);
+                    System.out.println("O Teor alcoolico: "+ boisson.teorAlc);
+                    System.out.println("A quantidade (ml): "+boisson.qutml);
+                    System.out.println("O preço de venda: "+boisson.precoDeVenda);
+                    System.out.println("A quantidade em estoque disponível: "+boisson.qutDispoEmEstoque);
+                    System.out.println("---------------------------------------");
              }
+                }else{System.out.println("Não tem bebida");}
+            }
 
 
 
