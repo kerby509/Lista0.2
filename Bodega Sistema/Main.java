@@ -101,7 +101,21 @@ public class Main {
                     }else{
                      System.out.println("Bebida não encontrada.");
                     }
-                }  
+                } 
+                //Cadadstrar cliente 
+            }else if(opt==5){
+                System.out.println("Entrar o código do cliente(a): ");
+                int  codigo=entrada.nextInt();
+                System.out.println("O nome do cliente(a): ");
+                 String nome = entrada.next();
+                 System.out.println("Inserir o CPF do clienta(a)");
+                 int cpf=entrada.nextInt();
+               
+                  boolean venderFiado = false;
+                  
+                  Clientes Clien=new Clientes(codigo, nome, cpf, venderFiado);
+                      cachaceiros.add(Clien);
+                       cliente+=1;
             }
 
 
