@@ -70,6 +70,22 @@ public class Main {
                     System.out.println("---------------------------------------");
              }
                 }else{System.out.println("Não tem bebida");}
+            }else if(opt==3){
+                System.out.println("Entrar o código de bebida: ");
+                int codBeb = entrada.nextInt();
+                for(int i=0;i<bebidas.size();i++){
+                 Bebida boisson = bebidas.get(i);
+                 
+                 if(codBeb==boisson.codigoBeb){
+                     System.out.println("quantos você quer comprar?: ");
+                     int quantComp=entrada.nextInt();
+                    boisson.ComprarBebida(quantComp);
+                     System.out.println("Compra realizada com sucesso");
+                    
+                  }else{
+                        System.out.println("Bebida não encontrada.");
+                    }
+                }
             }
 
 
