@@ -35,7 +35,7 @@ public class Main {
              System.out.println("Escolher uma opção");
              
              opt = entrada.nextInt();
-
+            // cadastrar bebida
              if(opt==1){
                
                 System.out.println("Digite o código da bebida: ");
@@ -54,7 +54,7 @@ public class Main {
                 Bebida beb = new Bebida (codigoBeb,nomeBeb,teorAlc,qutml,precoDeVenda,qutDispoEmEstoque);
                     bebidas.add(beb);
                     bebida+=1;
-             
+             // mostrar bebida
             }else if(opt==2){
                 if(bebida>0){
                 
@@ -70,6 +70,7 @@ public class Main {
                     System.out.println("---------------------------------------");
              }
                 }else{System.out.println("Não tem bebida");}
+            //comprar bebida
             }else if(opt==3){
                 System.out.println("Entrar o código de bebida: ");
                 int codBeb = entrada.nextInt();
@@ -86,7 +87,23 @@ public class Main {
                         System.out.println("Bebida não encontrada.");
                     }
                 }
+                //vender bebida
+            }else if (opt==4){
+                System.out.println("código de bebida para venda: ");
+                int codBeb = entrada.nextInt();
+                for(int i=0;i<bebidas.size();i++){
+                    Bebida boisson =bebidas.get(i);
+                    if(codBeb==boisson.codigoBeb){
+                        System.out.println("quantos você quer comprar?: ");
+                        int venda=entrada.nextInt();
+                         boisson.VenderBebida(venda);
+                 
+                    }else{
+                     System.out.println("Bebida não encontrada.");
+                    }
+                }  
             }
+
 
 
 
