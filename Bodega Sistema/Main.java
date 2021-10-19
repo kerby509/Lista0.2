@@ -116,7 +116,28 @@ public class Main {
                   Clientes Clien=new Clientes(codigo, nome, cpf, venderFiado);
                       cachaceiros.add(Clien);
                        cliente+=1;
-            }
+            // Mostrar cliente
+            }else if (opt==6){
+                if(cliente>0){
+                 for(int i=0;i<cachaceiros.size();i++){
+                Clientes Clien = cachaceiros.get(i);
+                
+                    System.out.println("Digite o código do cliente:"+Clien.codigo);
+                    System.out.println("Digite o nome:"+Clien.nome);
+                    System.out.println("Digite o CPF: "+Clien.cpf);
+                    if(Clien.venderFiado == true){
+                        System.out.println("Pode vender fiado");
+                    }else{
+                        System.out.println("Não pode vender fiado");
+                    }
+                   
+                }
+             }else {System.out.println("Obrigado :");
+                 break;
+         }
+             
+             }
+
 
 
 
