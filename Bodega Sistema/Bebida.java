@@ -1,4 +1,4 @@
-abstract class Bebida {
+public class Bebida {
     int codigoBeb;
     String nomeBeb;
     float teorAlc;
